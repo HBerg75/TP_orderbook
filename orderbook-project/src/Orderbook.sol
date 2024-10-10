@@ -1,9 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.26;
+pragma solidity ^0.8.12;
 
-// import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-// import "forge-std/contracts/ERC20.sol";
 
+import "../lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
 
 contract OrderBook {
     struct Order {
@@ -11,8 +10,9 @@ contract OrderBook {
         uint256 price;
         uint256 quantity;
         bool isBuyOrder;
-        uint256 timestamp; // To prioritize first-come-first-serve
+        uint256 timestamp;
     }
+    
 
     IERC20 public tokenA;
     IERC20 public tokenB;
