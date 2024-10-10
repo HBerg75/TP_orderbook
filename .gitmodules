@@ -1,0 +1,3 @@
+[submodule "orderbook-project/lib/forge-std"]
+	path = orderbook-project/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
